@@ -280,7 +280,7 @@ local function CreateBar(parent, i, background)
   parent.bars[i] = parent.bars[i] or CreateFrame("StatusBar", "ShaguDPSBar" .. i, parent)
   
   -- Set the bar texture
-  parent.bars[i]:SetStatusBarTexture("Interface\\Customtextures\\bar.blp") 
+  parent.bars[i]:SetStatusBarTexture("Interface\\AddOns\\ShaguDPS\\Customtextures\\bar.blp") 
   
   -- Set the position of the bar
   parent.bars[i]:SetPoint("TOPLEFT", parent, "TOPLEFT", 2, -config.height * (i-1) - 20)
@@ -294,7 +294,7 @@ local function CreateBar(parent, i, background)
   parent.bars[i].background = parent.bars[i].background or parent.bars[i]:CreateTexture(nil, "BACKGROUND")
   
   -- Set the background texture
-  parent.bars[i].background:SetTexture(background or "Interface\\Customtextures\\background.blp")
+  parent.bars[i].background:SetTexture(background or "Interface\\AddOns\\ShaguDPS\\Customtextures\\background.blp")
   
   -- Ensure the background covers the entire bar
   -- This will ensure the background height changes when the parent bar's height changes
@@ -304,7 +304,7 @@ local function CreateBar(parent, i, background)
   parent.bars[i].background:SetAlpha(1)  -- Adjust transparency if needed
 
   parent.bars[i].lowerBar = parent.bars[i].lowerBar or CreateFrame("StatusBar", "ShaguDPSLowerBar" .. i, parent)
-  parent.bars[i]:SetStatusBarTexture("Interface\\Customtextures\\bar.blp")
+  parent.bars[i]:SetStatusBarTexture("Interface\\Interface\AddOns\\Customtextures\\ShaguDPSbar.blp")
   parent.bars[i].lowerBar:SetPoint("TOPLEFT", parent, "TOPLEFT", 2, -config.height * (i-1) - 22)
   parent.bars[i].lowerBar:SetPoint("TOPRIGHT", parent, "TOPRIGHT", -2, -config.height * (i-1) - 22)
   parent.bars[i].lowerBar:SetStatusBarColor(1, 1, 1, 0)
@@ -385,7 +385,7 @@ window:SetScript("OnUpdate", function()
 end)
 
 window.title = window:CreateTexture(nil, "NORMAL")
-window.title:SetTexture("Interface\\Customtextures\\header.tga")
+window.title:SetTexture("Interface\\AddOns\\ShaguDPS\\Customtextures\\header.tga")
 window.title:SetHeight(20)
 window.title:SetPoint("TOPLEFT", 0, 0)
 window.title:SetPoint("TOPRIGHT", 0, 0)
