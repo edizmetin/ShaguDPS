@@ -304,7 +304,7 @@ local function CreateBar(parent, i, background)
   parent.bars[i].background:SetAlpha(1)  -- Adjust transparency if needed
 
   parent.bars[i].lowerBar = parent.bars[i].lowerBar or CreateFrame("StatusBar", "ShaguDPSLowerBar" .. i, parent)
-  parent.bars[i]:SetStatusBarTexture("Interface\\Interface\AddOns\\Customtextures\\ShaguDPSbar.blp")
+  parent.bars[i]:SetStatusBarTexture("Interface\\Interface\\AddOns\\Customtextures\\ShaguDPSbar.blp")
   parent.bars[i].lowerBar:SetPoint("TOPLEFT", parent, "TOPLEFT", 2, -config.height * (i-1) - 22)
   parent.bars[i].lowerBar:SetPoint("TOPRIGHT", parent, "TOPRIGHT", -2, -config.height * (i-1) - 22)
   parent.bars[i].lowerBar:SetStatusBarColor(1, 1, 1, 0)
