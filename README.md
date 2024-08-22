@@ -1,4 +1,7 @@
 # ShaguDPS
+This is a fork of ShaguDPS with tweaked textures to fit Turtle Wow Dragonflight UI
+
+![image](https://github.com/user-attachments/assets/11197400-c56c-4fc8-80f1-5e7bf704ecc3)
 
 A very small and lightweight damage meter. The combat log is parsed in a locale-independent way and should work on every 1.12 (vanilla) and 2.4.3 (burning crusade) based client.
 
