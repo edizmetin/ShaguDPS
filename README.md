@@ -10,9 +10,6 @@ but instead to offer a simple damage tracker, that is fast and uses the least am
 
 **So don't expect to see anything fancy here.**
 
-![ShaguDPS](screenshot.jpg)
-
-![ShaguDPS](screenshot2.jpg)
 
 ## Installation (Vanilla, 1.12)
 1. Download **[Latest Version](https://github.com/shagu/ShaguDPS/archive/master.zip)**
